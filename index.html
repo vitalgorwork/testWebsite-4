@@ -14,17 +14,14 @@
       "https://static.cg15eksnoana9202.testanactz.cbinternal.com/"+'sdk/capig-events.js');
     cbq('init', "8160889640682685491");
     cbq('loadConfig', "8160889640682685491");
-    cbq('track', 'PageViewWebsite-4');
+    cbq('track', 'PageView');
     </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1882688758804664&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Meta Pixel Code -->
 <meta name="facebook-domain-verification" content="qowwrhpyni79cf2pms3zixyrxoh3b4" />
 <title>pixel test page</title>
 </head>
 <body>
-    <h2>Pixel test page Website-4: - 2</h2>
+    <h2>pixel test page</h2>
     <div>
     <ul>
         <li><button id="addToWishlistButton" type="button">Add to Wishlist</button></li>
@@ -33,40 +30,42 @@ src="https://www.facebook.com/tr?id=1882688758804664&ev=PageView&noscript=1"
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
-        <li><button id="registrationButton" type="button">EventButton</button></li>
+        <li><button id="unWantedEvent_button" type="button">unWantedEvent</button></li>
+    
     </ul>
     </div>
 
 <script type="text/javascript">
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
-  fbq('track', 'AddToWishlist');
+  cbq('track', 'Contact');
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
-  fbq('track', 'AddToCart');
+  cbq('track', 'CustomEvents2');
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
-  fbq('track', 'InitiateCheckout');
+  cbq('track', 'InitiateCheckout');
 }, false);
 
 document.getElementById('purchaseButton').addEventListener('click', function() {
-  fbq('track', 'Purchase', {
-    value: 100,
+cbq('track', 'Purchase', {
+    value: "fsdgdfg",
     currency: 'USD',
   });
 }, false);
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
-  fbq('track', 'Subscribe');
+  cbq('track', 'Subscribe');
 }, false);
 
 document.getElementById('registrationButton').addEventListener('click', function() {
-  fbq('track', 'CompleteRegistration');
+  cbq('track', 'CompleteRegistration');
 }, false);
 
-document.getElementById('registrationButton').addEventListener('click', function() {
-  fbq('track', 'EventButton');
+    document.getElementById('unWantedEvent_button').addEventListener('click', function() {
+cbq('track', 'unWantedEvent');
 }, false);
+
 </script>
 </body>
