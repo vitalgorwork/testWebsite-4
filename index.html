@@ -20,7 +20,7 @@
 <title>pixel test page</title>
 </head>
 <body>
-    <h2>1st Party Pixel Test page. Website - 4</h2>
+    <h2>pixel test page</h2>
     <div>
     <ul>
         <li><button id="addToWishlistButton" type="button">Add to Wishlist</button></li>
@@ -29,47 +29,35 @@
         <li><button id="purchaseButton" type="button">Purchase</button></li>
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
-        <li><button id="unWantedEvent_button" type="button">unWantedEvent</button></li>
-        <li><button id="unverifiedEvent_button" type="button">unverifiedEvent</button></li>
-    
     </ul>
     </div>
 
 <script type="text/javascript">
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
-  cbq('track', 'Contact');
+  fbq('track', 'AddToWishlist');
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
-  cbq('track', 'CustomEvents2');
+  fbq('track', 'AddToCart');
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
-  cbq('track', 'InitiateCheckout');
+  fbq('track', 'InitiateCheckout');
 }, false);
 
 document.getElementById('purchaseButton').addEventListener('click', function() {
-cbq('track', 'Purchase', {
-    value: "fsdgdfg",
+  fbq('track', 'Purchase', {
+    value: 100,
     currency: 'USD',
   });
 }, false);
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
-  cbq('track', 'Subscribe');
+  fbq('track', 'Subscribe');
 }, false);
 
 document.getElementById('registrationButton').addEventListener('click', function() {
-  cbq('track', 'CompleteRegistration');
+  fbq('track', 'CompleteRegistration');
 }, false);
-
-document.getElementById('unWantedEvent_button').addEventListener('click', function() {
-  cbq('track', 'unWantedEvent');
-}, false);
-
-document.getElementById('unverifiedEvent_button').addEventListener('click', function() {
-  cbq('track', 'unverifiedEvent', {value: 100,currency: 'USD',ssn:'11223333'  }) 
-}, false);
-
 </script>
 </body>
